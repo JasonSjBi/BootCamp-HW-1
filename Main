@@ -1,0 +1,15 @@
+def count_vowels(word):
+    # Define the set of vowels
+    vowels = 'aeiouAEIOU'
+    # Initialize a counter for vowels
+    count = 0
+    # Iterate through each character in the word
+    for char in word:
+        # Check if the character is a vowel
+        if char in vowels:
+            count += 1
+    return count
+
+# Example usage:
+word = "Hello, World!"
+print(f"The number of vowels in '{word}' is: {count_vowels(word)}")
